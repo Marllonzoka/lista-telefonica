@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Lista de contato</title>
+</head>
+<body>
+    <header>
+        <img src="phone-icon.svg" alt="Ícone de telefone">
+        <h1>Lista de contatos</h1>
+    </header>
+    <div class="container">
+        <form id="form-contato">
+            <h2>Insira seu contato</h2>
+            <div class="input-nome">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" required="">
+            </div>
+            
+            <div class="input-telefone">
+                <label for="telefone">(DDD) + Telefone</label>
+                <input id="telefone" required="" type="number">
+            </div>
+            
+            <button type="submit">Cadastrar contato</button>
+        </form>
+        <div class="tabela">
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            Telefone
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>N° de contatos</td>
+                        <td id="numero-total-contatos">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body></html>
